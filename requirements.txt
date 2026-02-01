@@ -1,4 +1,6 @@
 streamlit
+streamlit-gsheets
 pandas
 jpholiday
-st-gsheets-connection
+gspread
+plotly
