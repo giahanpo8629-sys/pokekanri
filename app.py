@@ -11,10 +11,10 @@ st.set_page_config(page_title="ポケカ資産管理", layout="wide")
 
 # PSAプラン設定
 psa_japan_plans = {
-    "Bulk":      {"business_days": 80, "price": 3300},
-    "Value":     {"business_days": 60, "price": 4400},
-    "Regular":   {"business_days": 30, "price": 8800},
-    "Express":   {"business_days": 15, "price": 22000},
+    "Value":      {"business_days": 45, "price": 3980},
+    "ValuePlus":     {"business_days": 20, "price": 6980},
+    "Regular":   {"business_days": 10, "price": 9980},
+    "Express":   {"business_days": 10, "price": 16980},
 }
 
 def add_business_days(start_date, days_to_add):
@@ -130,4 +130,5 @@ elif menu == "🗂 リスト":
     st.title("🗂 登録データ一覧")
     df = load_data()
     st.dataframe(df)
+
     st.info("データの修正・削除はGoogleスプレッドシート側で行ってください。")
